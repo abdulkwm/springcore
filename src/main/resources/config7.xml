@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--        <bean name="person" class="cogent.infotech.com.bean.Person"></bean>-->
+<!--        <bean name="person" class="cogent.infotech.com.bean.Person" autowire="byName"></bean>-->
+<!--        <bean name="person" class="cogent.infotech.com.bean.Person" autowire="byType"></bean>-->
+        <bean name="person" class="cogent.infotech.com.bean.Person" autowire="constructor"></bean>
+        <bean name="car" class="cogent.infotech.com.bean.Car">
+                <property name="model" value="honda city"></property>
+                <property name="price" value="5000"></property>
+        </bean>
+        <bean name="address" class="cogent.infotech.com.bean.Address">
+                <property name="houseNo" value="245"></property>
+                <property name="street" value="43 maple rd"></property>
+                <property name="city" value="New york"></property>
+        </bean>
+</beans>
+

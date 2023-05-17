@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+        <bean name="person" class="cogent.infotech.com.autowiring_annotation.Person" ></bean>
+        <bean name="car" class="cogent.infotech.com.autowiring_annotation.Car" p:model="Honda" p:price="10000" ></bean>
+        <bean class="org.springframework.beans.factory.annotation.Autowired"></bean>
+        <context:annotation-config></context:annotation-config>
+
+<!--        <bean name="customer" class="cogent.infotech.com.autowire_exce.Customer" ></bean>-->
+<!--        <bean name="reservation" class="cogent.infotech.com.autowire_exce.Reservation" p:id="1001" p:time="10:00 PM" ></bean>-->
+<!--        <bean class="org.springframework.beans.factory.annotation.Autowired"></bean>-->
+</beans>
+
